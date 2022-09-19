@@ -3,9 +3,12 @@ function Sugestao(props) {
       <li class="sugestao">
         <div class="usuario">
           <img src={props.imagem} />
+          <div class="texto">
           <div class="nome">{props.nome}</div>
           <div class="razao">{props.razao}</div>
         </div>
+        </div>
+        <div class="seguir">Seguir</div>
       </li>
     )
   }
@@ -21,7 +24,7 @@ function Sugestao(props) {
       <ul class="sugestoes">
         <Titulo />
         {listaSugestoes.map((s) => <Sugestao nome={s.nome} imagem={s.imagem} razao={s.razao} />)}
-        <div class="seguir">Seguir</div>
+
       </ul>
     )
   }
